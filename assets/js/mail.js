@@ -24,8 +24,6 @@ window.addEventListener('load', function () {
             var childData = childSnapshot.val();
 
             if (childData != null) {
-                console.log(childData);
-                console.log(childSnapshot.key)
                 document.getElementById(childSnapshot.key).href =  childData
             }
         });
@@ -39,7 +37,6 @@ function submitForm(e) {
     var emailid = getElementVal("emailid");
     var msgContent = getElementVal("msgContent");
     if (name.trim().length != 0 && emailid.trim().length != 0 && msgContent.trim().length != 0) {
-        console.log(name)
         saveMessages(name, emailid, msgContent);
         //   enable alert
         document.getElementById("GFG").innerHTML = name + ", Your message was sent!"
