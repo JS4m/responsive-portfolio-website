@@ -746,6 +746,15 @@ border-radius: .5rem;
 .contact__form-area textarea{
   resize: none;
 }
+.alert{
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: var(--normal-font-size);
+  display: none;
+
+}
 /*=============== FOOTER ===============*/
 .footer{
   background-color:var(--first-color) ;
